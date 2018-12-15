@@ -1,6 +1,8 @@
 package rm.com.longpresspopup;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -65,6 +67,7 @@ public class DialogPopup extends AlertDialog {
                 }
 
                 getWindow().setWindowAnimations(animations);
+                getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             }
 
         } catch (Exception e) {
